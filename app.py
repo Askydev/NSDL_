@@ -1,14 +1,9 @@
-import os
 import fitz
 from flask import Flask, request, jsonify
 from flask_restful import reqparse, Api, abort, Resource
 import re
-from PIL import Image
-import pdf2image
 import os
 from flask_cors import CORS, cross_origin
-import pytesseract
-import threading
 from utility import read_hpi,extract_data_nsdl
 import preprocess_image
 import cv2
